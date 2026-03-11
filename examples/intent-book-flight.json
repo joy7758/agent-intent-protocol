@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0-draft",
+  "object_type": "agent_intent",
+  "intent": {
+    "operation": "search_flights",
+    "summary": "Find round-trip flight options from Shanghai to Singapore for next week"
+  },
+  "actor_ref": "pop://personas/travel-assistant",
+  "constraints": {
+    "max_budget_usd": 900,
+    "approval_required": false,
+    "allowed_regions": [
+      "CN",
+      "SG"
+    ]
+  },
+  "target_ref": "inventory://travel/flights",
+  "input_refs": [
+    "dataset://travel/preferences/user-017"
+  ],
+  "expected_result": {
+    "summary": "Three ranked flight options"
+  },
+  "evidence_requirements": {
+    "retain_search_trace": true
+  },
+  "policy_context_ref": "policy://travel/standard-search",
+  "correlation_id": "trip-search-001"
+}

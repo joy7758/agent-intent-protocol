@@ -1,0 +1,15 @@
+{
+  "schema_version": "0.1.0-draft",
+  "object_type": "agent_result",
+  "status": "completed",
+  "actor_ref": "pop://personas/travel-assistant",
+  "correlation_id": "trip-search-001",
+  "output_refs": [
+    "artifact://travel/flight-options/trip-search-001"
+  ],
+  "evidence_refs": [
+    "aro://receipts/trip-search-001"
+  ],
+  "execution_trace_ref": "mvk://trace/trip-search-001",
+  "governance_decision_ref": "governor://decisions/preflight-001"
+}

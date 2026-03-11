@@ -1,0 +1,6 @@
+{
+  "schema_version": "0.1.0-draft",
+  "object_type": "agent_intent",
+  "actor_ref": "pop://personas/research-assistant",
+  "constraints": {}
+}

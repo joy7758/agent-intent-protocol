@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AIP Result Object",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "object_type",
+    "status",
+    "actor_ref",
+    "correlation_id"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "0.1.0-draft"
+    },
+    "object_type": {
+      "type": "string",
+      "const": "agent_result"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "completed",
+        "blocked",
+        "failed",
+        "partial"
+      ]
+    },
+    "actor_ref": {
+      "type": "string"
+    },
+    "correlation_id": {
+      "type": "string"
+    },
+    "output_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "error": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "execution_trace_ref": {
+      "type": "string"
+    },
+    "governance_decision_ref": {
+      "type": "string"
+    }
+  }
+}

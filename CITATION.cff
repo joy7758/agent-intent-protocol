@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this draft protocol, please cite it using the metadata below."
+title: "Agent Intent Protocol (AIP)"
+type: software
+authors:
+  - family-names: "Zhang"
+    given-names: "Bin"
+repository-code: "https://github.com/joy7758/agent-intent-protocol"
+url: "https://github.com/joy7758/agent-intent-protocol"
+license: "MIT"
+version: "0.1.0-draft"
+date-released: 2026-03-12
+abstract: "Minimal semantic interaction objects for agent runtimes."
+keywords:
+  - agent intent
+  - interaction layer
+  - semantic objects
+  - ai agents
+  - governance
+  - execution integrity
+  - audit evidence

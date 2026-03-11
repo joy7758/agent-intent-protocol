@@ -1,0 +1,6 @@
+{
+  "schema_version": "0.1.0-draft",
+  "object_type": "agent_result",
+  "actor_ref": "pop://personas/research-assistant",
+  "correlation_id": "lookup-002"
+}

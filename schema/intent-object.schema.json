@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AIP Intent Object",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "object_type",
+    "intent",
+    "actor_ref",
+    "constraints"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "0.1.0-draft"
+    },
+    "object_type": {
+      "type": "string",
+      "const": "agent_intent"
+    },
+    "intent": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "summary"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "operation": {
+          "type": "string"
+        }
+      }
+    },
+    "actor_ref": {
+      "type": "string"
+    },
+    "constraints": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "target_ref": {
+      "type": "string"
+    },
+    "input_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expected_result": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "evidence_requirements": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "policy_context_ref": {
+      "type": "string"
+    },
+    "correlation_id": {
+      "type": "string"
+    }
+  }
+}

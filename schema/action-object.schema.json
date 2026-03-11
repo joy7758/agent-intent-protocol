@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AIP Action Object",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "object_type",
+    "action",
+    "actor_ref",
+    "execution_mode"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "0.1.0-draft"
+    },
+    "object_type": {
+      "type": "string",
+      "const": "agent_action"
+    },
+    "action": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "string"
+        }
+      }
+    },
+    "actor_ref": {
+      "type": "string"
+    },
+    "execution_mode": {
+      "type": "string",
+      "enum": [
+        "proposal",
+        "direct",
+        "delegated",
+        "simulation"
+      ]
+    },
+    "tool_ref": {
+      "type": "string"
+    },
+    "parameters": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "side_effect_class": {
+      "type": "string",
+      "enum": [
+        "read_only",
+        "state_change",
+        "external_write"
+      ]
+    },
+    "policy_checkpoint_ref": {
+      "type": "string"
+    },
+    "correlation_id": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "0.1.0-draft",
+  "object_type": "agent_result",
+  "status": "blocked",
+  "actor_ref": "pop://personas/travel-assistant",
+  "correlation_id": "trip-search-002",
+  "error": {
+    "code": "POLICY_BLOCKED",
+    "message": "International booking requires human approval."
+  },
+  "governance_decision_ref": "governor://decisions/preflight-002"
+}

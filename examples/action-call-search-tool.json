@@ -1,0 +1,20 @@
+{
+  "schema_version": "0.1.0-draft",
+  "object_type": "agent_action",
+  "action": {
+    "name": "call_search_tool",
+    "summary": "Query the local flight-search adapter"
+  },
+  "actor_ref": "pop://personas/travel-assistant",
+  "execution_mode": "proposal",
+  "tool_ref": "tool://local/flight-search",
+  "parameters": {
+    "origin": "PVG",
+    "destination": "SIN",
+    "depart_after": "2026-03-19",
+    "return_before": "2026-03-28"
+  },
+  "side_effect_class": "read_only",
+  "policy_checkpoint_ref": "governor://decisions/preflight-001",
+  "correlation_id": "trip-search-001"
+}
