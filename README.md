@@ -119,6 +119,10 @@ pytest
 - Semantic interaction layer only
 - Intended to compose with POP, Token Governor, MVK, and ARO-Audit
 
+## FDO-facing Note
+
+For FDO-related positioning, see [docs/fdo-relation-note.md](docs/fdo-relation-note.md).
+
 ## Architecture Navigation
 
 - [Digital Biosphere Architecture](https://github.com/joy7758/digital-biosphere-architecture)
