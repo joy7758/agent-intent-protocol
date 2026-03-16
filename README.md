@@ -6,6 +6,12 @@ Agent Intent Protocol (AIP) is a draft semantic interaction layer for the Digita
 
 AIP is not a transport protocol and not a full runtime framework. Its role is narrower: provide a compact object model for what an agent is trying to do, what action is proposed or taken, and what result is returned.
 
+## Role in Digital Biosphere Architecture
+
+AIP is the **Interaction Protocol Standard Entry**.
+
+It defines the semantic exchange structure between agents.
+
 ## Architecture Position
 
 AIP contributes the Interaction Layer in the Digital Biosphere Architecture ecosystem.
