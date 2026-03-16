@@ -118,3 +118,12 @@ pytest
 - Working draft
 - Semantic interaction layer only
 - Intended to compose with POP, Token Governor, MVK, and ARO-Audit
+
+## Architecture Navigation
+
+- [Digital Biosphere Architecture](https://github.com/joy7758/digital-biosphere-architecture)
+- [Persona Object Protocol](https://github.com/joy7758/persona-object-protocol)
+- [Agent Intent Protocol](https://github.com/joy7758/agent-intent-protocol)
+- [Token Governor](https://github.com/joy7758/token-governor)
+- [MVK](https://github.com/joy7758/fdo-kernel-mvk)
+- [ARO Audit](https://github.com/joy7758/aro-audit)
