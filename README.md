@@ -6,6 +6,29 @@ Agent Intent Protocol (AIP) is a draft semantic interaction layer for the Digita
 
 AIP is not a transport protocol and not a full runtime framework. Its role is narrower: provide a compact object model for what an agent is trying to do, what action is proposed or taken, and what result is returned.
 
+## Role
+
+`agent-intent-protocol` is the interaction-semantics layer of the Digital Biosphere Architecture. It defines intent, action, and result objects that can move between persona, governance, execution, and audit surfaces.
+
+## Not this repo
+
+- not a transport protocol
+- not a runtime framework
+- not the benchmark suite
+- not the architecture hub
+
+## Start here
+
+- `spec/`
+- `schema/`
+- `conformance/`
+
+## Depends on
+
+- [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture)
+- [persona-object-protocol](https://github.com/joy7758/persona-object-protocol)
+- intended to compose with [token-governor](https://github.com/joy7758/token-governor), [fdo-kernel-mvk](https://github.com/joy7758/fdo-kernel-mvk), and [aro-audit](https://github.com/joy7758/aro-audit)
+
 ## Role in Digital Biosphere Architecture
 
 AIP is the **Interaction Protocol Standard Entry**.
