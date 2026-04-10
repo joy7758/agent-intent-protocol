@@ -2,6 +2,11 @@
 
 AIP can be read as a candidate interaction semantics profile for agent-to-agent exchange.
 
+For public routing, start with
+[digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture)
+as the architecture hub, then use `agent-intent-protocol` as the interaction
+layer repository.
+
 ## FDO-facing interpretation
 
 AIP is relevant where structured intent, action, and result semantics may need to be represented as bounded, interpretable artifacts.
@@ -21,4 +26,7 @@ AIP is relevant where structured intent, action, and result semantics may need t
 
 ## Current architectural role
 
-AIP is the Interaction Protocol Standard Entry in the Digital Biosphere Architecture.
+AIP is the interaction layer repository in the Digital Biosphere Architecture.
+
+It is a layer repo for machine-readable intent, action, and result objects, not
+the architecture hub.

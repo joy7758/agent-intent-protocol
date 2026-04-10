@@ -6,25 +6,49 @@
 
 *智能体运行时的最小语义交互对象。*
 
-智能体意图协议（AIP）是数字生物圈架构生态系统的语义交互层草案。它定义了机器可读的意图、操作和结果对象，这些对象可以在面向角色的系统、治理检查点、运行时和审计层之间传递。
+智能体意图协议（AIP）是 Digital Biosphere Architecture 的交互层仓库。它定义机器可读的意图、操作和结果对象，用于在 persona 导向系统、治理检查点、运行时和审计层之间传递。它是 layer repo，不是 canonical architecture hub。
 
-AIP 不是传输协议，也不是完整的运行时框架。它的作用范围更窄：为智能体试图做什么、建议或采取什么操作以及返回什么结果提供一个紧凑的对象模型。
+## Role
 
-## 在数字生物圈架构中的作用
+`agent-intent-protocol` 是 Digital Biosphere Architecture 的交互层仓库。
 
-AIP 是**交互协议标准条目**。
+它定义机器可读的 intent、action 和 result 对象。
 
-它定义了智能体之间的语义交换结构。
+它是 layer repo，不是 canonical architecture hub。
+
+## Not this repo
+
+- not a transport protocol
+- not the governance layer
+- not the execution-integrity kernel
+- not the audit record format
+- not the architecture hub
+
+## Start here
+
+- `spec/`
+- `schema/`
+- `examples/`
+- `conformance/`
+- [docs/fdo-relation-note.md](docs/fdo-relation-note.md)
+- [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture)
+
+## Depends on
+
+- POP handles persona identity.
+- Token Governor handles runtime constraints and policy.
+- MVK handles execution integrity.
+- ARO-Audit handles evidence and receipts.
+
+## Status
+
+- working draft
+- semantic interaction layer only
+- intended to compose with adjacent layers
 
 ## 架构位置
 
-AIP 贡献了数字生物圈架构生态系统中的交互层。
-
-- POP 处理角色身份。
-- AIP 处理任务意图、操作和结果交换。
-- 令牌治理器处理运行时约束和策略。
-- MVK 处理执行完整性。
-- ARO-Audit 处理证据和回执。
+AIP 贡献了 Digital Biosphere Architecture 生态中的交互层。
 
 ```mermaid
 flowchart LR
@@ -39,7 +63,6 @@ flowchart LR
 - AIP 不是聊天格式。
 - AIP 不是传输层。
 - AIP 不是一个完整的智能体编排框架。
-- AIP 不是审计记录格式。
 - AIP 不是许可或身份替代品。
 
 ## 核心对象
@@ -116,12 +139,6 @@ python3 scripts/validate_examples.py
 ```bash
 pytest
 ```
-
-## 地位
-
-- 工作草案
-- 仅语义交互层
-- 旨在与 POP、Token Governor、MVK 和 ARO-Audit 组合
 
 ## 面向 FDO 的注释
 

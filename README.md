@@ -6,25 +6,55 @@
 
 *Minimal semantic interaction objects for agent runtimes.*
 
-Agent Intent Protocol (AIP) is a draft semantic interaction layer for the Digital Biosphere Architecture ecosystem. It defines machine-readable intent, action, and result objects that can pass between persona-oriented systems, governance checkpoints, runtimes, and audit layers.
+Agent Intent Protocol (AIP) is the interaction layer repository in the Digital
+Biosphere Architecture. It defines machine-readable intent, action, and result
+objects that can pass between persona-oriented systems, governance checkpoints,
+runtimes, and audit layers. It is a layer repo, not a canonical architecture
+hub.
 
-AIP is not a transport protocol and not a full runtime framework. Its role is narrower: provide a compact object model for what an agent is trying to do, what action is proposed or taken, and what result is returned.
+## Role
 
-## Role in Digital Biosphere Architecture
+`agent-intent-protocol` is the interaction layer repository in the Digital
+Biosphere Architecture.
 
-AIP is the **Interaction Protocol Standard Entry**.
+It defines machine-readable intent, action, and result objects.
 
-It defines the semantic exchange structure between agents.
+It is a layer repo, not a canonical architecture hub.
 
-## Architecture Position
+## Not this repo
 
-AIP contributes the Interaction Layer in the Digital Biosphere Architecture ecosystem.
+- not a transport protocol
+- not the governance layer
+- not the execution-integrity kernel
+- not the audit record format
+- not the architecture hub
+
+## Start here
+
+- `spec/`
+- `schema/`
+- `examples/`
+- `conformance/`
+- [docs/fdo-relation-note.md](docs/fdo-relation-note.md)
+- [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture)
+
+## Depends on
 
 - POP handles persona identity.
-- AIP handles task intent, action, and result exchange.
 - Token Governor handles runtime constraints and policy.
 - MVK handles execution integrity.
 - ARO-Audit handles evidence and receipts.
+
+## Status
+
+- working draft
+- semantic interaction layer only
+- intended to compose with adjacent layers
+
+## Architecture Position
+
+AIP contributes the Interaction Layer in the Digital Biosphere Architecture
+ecosystem.
 
 ```mermaid
 flowchart LR
@@ -39,7 +69,6 @@ flowchart LR
 - AIP is not a chat format.
 - AIP is not a transport layer.
 - AIP is not a full agent orchestration framework.
-- AIP is not an audit record format.
 - AIP is not a permission or identity substitute.
 
 ## Core Objects
@@ -116,12 +145,6 @@ Run the minimal test surface:
 ```bash
 pytest
 ```
-
-## Status
-
-- Working draft
-- Semantic interaction layer only
-- Intended to compose with POP, Token Governor, MVK, and ARO-Audit
 
 ## FDO-facing Note
 
