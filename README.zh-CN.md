@@ -6,7 +6,7 @@
 
 *智能体运行时的最小语义交互对象。*
 
-智能体意图协议（AIP）是 Digital Biosphere Architecture 的交互层仓库。它定义机器可读的意图、操作和结果对象，用于在 persona 导向系统、治理检查点、运行时和审计层之间传递。它是 layer repo，不是 canonical architecture hub。
+AIP 是 Digital Biosphere Architecture 的交互层仓库。它定义机器可读的意图、操作和结果对象，用于在 persona 导向系统、治理检查点、运行时和审计层之间传递。它是 layer repo，不是 canonical architecture hub。
 
 ## Role
 

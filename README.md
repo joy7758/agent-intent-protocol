@@ -6,9 +6,9 @@
 
 *Minimal semantic interaction objects for agent runtimes.*
 
-Agent Intent Protocol (AIP) is the interaction layer repository in the Digital
-Biosphere Architecture. It defines machine-readable intent, action, and result
-objects that can pass between persona-oriented systems, governance checkpoints,
+AIP is the interaction layer repository in the Digital Biosphere
+Architecture. It defines machine-readable intent, action, and result objects
+that can pass between persona-oriented systems, governance checkpoints,
 runtimes, and audit layers. It is a layer repo, not a canonical architecture
 hub.
 
