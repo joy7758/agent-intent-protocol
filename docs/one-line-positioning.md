@@ -1,3 +1,4 @@
 # One-Line Positioning
 
-AIP is the interaction entry: it defines how autonomous systems exchange intent, action, and result in a bounded semantic form.
+AIP is the interaction layer repository: it defines machine-readable intent,
+action, and result objects in a bounded semantic form.
